@@ -1,4 +1,4 @@
-# SoundCtl
+# SmartChime
 
 ![Grandfather Clock](assets/grandfather_clock.png)
 
@@ -6,7 +6,7 @@ A simple sound control and notification system for Home Assistant, integrated wi
 
 ## Overview
 
-SoundCtl allows you to play scheduled sounds (like **church bells**, **grandfather clock** chimes, or routine notifications) and control volume levels on a Linux-based system. It turns your smart home speakers into a classic timekeeper with an **hourly chime**. It integrates with Home Assistant to respect "Do Not Disturb" settings (via `input_boolean.bells_enabled`) and volume controls.
+SmartChime allows you to play scheduled sounds (like **church bells**, **grandfather clock** chimes, or routine notifications) and control volume levels on a Linux-based system. It turns your smart home speakers into a classic timekeeper with an **hourly chime**. It integrates with Home Assistant to respect "Do Not Disturb" settings (via `input_boolean.bells_enabled`) and volume controls.
 
 ## Features
 
@@ -40,9 +40,10 @@ soundctl/
 ## Setup
 
 1.  **Clone the repository:**
+1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/yourusername/soundctl.git
-    cd soundctl
+    git clone https://github.com/onesvat/smart-chime.git
+    cd smart-chime
     ```
 
 2.  **Configuration:**
