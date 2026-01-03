@@ -1,0 +1,16 @@
+# Config
+config/ha.token
+config/soundctl.conf
+
+# Logs
+logs/
+*.log
+
+# Temp
+*.tmp
+*.bak
+
+# Media
+sounds/*
+!sounds/*_single.mp3
+

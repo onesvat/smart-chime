@@ -1,0 +1,37 @@
+# Routine Schedule
+
+# Morning Work Block 1
+# 08:15 start.mp3
+# 10:15 break.mp3
+
+# Morning Work Block 2
+# 11:30 start.mp3
+# 12:45 break.mp3
+
+# Sport & Afternoon
+# 13:05 sport.mp3
+
+# Work Block 3
+# 15:15 start.mp3
+# 18:15 break.mp3
+
+# Wind Down
+
+# 21:15 break.mp3
+# 22:30 long-dang-168.mp3
+# 23:15 long-dang-168.mp3
+
+# Hourly Chimes (10:00 - 22:00)
+10:00 10_single.mp3
+11:00 11_single.mp3
+12:00 12_single.mp3
+13:00 1_single.mp3
+14:00 2_single.mp3
+15:00 3_single.mp3
+16:00 4_single.mp3
+17:00 5_single.mp3
+18:00 6_single.mp3
+19:00 7_single.mp3
+20:00 8_single.mp3
+21:00 9_single.mp3
+22:00 10_single.mp3
