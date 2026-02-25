@@ -21,17 +21,17 @@
 # 22:30 long-dang-168.mp3
 # 23:15 long-dang-168.mp3
 
-# Hourly Chimes (10:00 - 22:00)
-10:00 10_single.mp3
-11:00 11_single.mp3
-12:00 12_single.mp3
-13:00 1_single.mp3
-14:00 2_single.mp3
-15:00 3_single.mp3
-16:00 4_single.mp3
-17:00 5_single.mp3
-18:00 6_single.mp3
-19:00 7_single.mp3
-20:00 8_single.mp3
-21:00 9_single.mp3
-22:00 10_single.mp3
+# Hourly Chimes (10:00 - 22:00) - Perfected Roman Base-4 System
+10:00 roman/hour_1.wav
+11:00 roman/hour_2.wav
+12:00 roman/hour_3.wav
+13:00 roman/hour_4.wav
+14:00 roman/hour_5.wav
+15:00 roman/hour_6.wav
+16:00 roman/hour_7.wav
+17:00 roman/hour_8.wav
+18:00 roman/hour_9.wav
+19:00 roman/hour_10.wav
+20:00 roman/hour_11.wav
+21:00 roman/hour_12.wav
+22:00 roman/hour_13.wav

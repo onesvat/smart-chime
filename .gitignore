@@ -13,4 +13,8 @@ logs/
 # Media
 sounds/*
 !sounds/*_single.mp3
+!sounds/roman/
+!sounds/new/
 
+# Tools
+!tools/
