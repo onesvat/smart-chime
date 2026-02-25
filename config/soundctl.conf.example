@@ -1,26 +1,17 @@
-# Sound Control Configuration
+# Sound Control Configuration (Template)
+# -----------------------------------------------------------
 
-# Paths
-BASE_DIR="/home/onur/soundctl"
+# Paths - Update these to match your installation directory
+BASE_DIR="/path/to/your/smart-chime"
 SOUNDS_DIR="${BASE_DIR}/sounds"
 LOG_DIR="${BASE_DIR}/logs"
 ROUTINE_SCHEDULE="${BASE_DIR}/config/schedule.txt"
 
-# Player (mpg123)
-PLAYER="/usr/bin/mpg123"
-PLAYER_ARGS="-q"
+# PLAYER (PipeWire native)
+PLAYER="/usr/bin/pw-play"
 
-# ALSA Control
-AMIXER="/usr/bin/amixer"
-ALSA_CONTROL="AirPlayMaster"
-
-# Defaults
-DUCK_VOL=30
-
-# Home Assistant
-HA_URL="http://homeassistant.local:8123"
-HA_TOKEN_FILE="${BASE_DIR}/config/ha.token"
-
-# Entities
-ENTITY_ENABLED="input_boolean.bells_enabled"
-ENTITY_VOL="input_number.airplay_bell_volume"
+# --- HOME ASSISTANT MANAGED SECTION ---
+# These values can be toggled by external scripts
+BELLS_ENABLED="on"
+DEFAULT_VOLUME="0.8"
+# --- END HA MANAGED SECTION ---
