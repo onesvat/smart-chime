@@ -4,18 +4,9 @@ set -euo pipefail
 # This script is called by cron every minute (* * * * *).
 # It checks the schedule and plays the sound if the time matches.
 
-SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-BASE_DIR="$(cd "${SCRIPT_DIR}/.." && pwd)"
-
-# Load config
-CONF="${BASE_DIR}/config/soundctl.conf"
-if [[ -f "$CONF" ]]; then
-  # shellcheck disable=SC1090
-  source "$CONF"
-else
-  echo "Error: Configuration file not found at $CONF" >&2
-  exit 1
-fi
+# --- Setup & Configuration ---
+CONF="$(cd "$(dirname "${BASH_SOURCE[0]}")/../config" && pwd)/soundctl.conf"
+if [[ -f "$CONF" ]]; then source "$CONF"; else echo "Error: Config not found" >&2; exit 1; fi
 
 # Check if bells are disabled (HA-managed field)
 if [[ "${BELLS_ENABLED:-off}" != "on" ]]; then

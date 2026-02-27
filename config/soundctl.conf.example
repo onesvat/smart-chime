@@ -15,3 +15,9 @@ PLAYER="/usr/bin/pw-play"
 BELLS_ENABLED="on"
 DEFAULT_VOLUME="0.8"
 # --- END HA MANAGED SECTION ---
+
+# --- CASTING CONFIGURATION ---
+# Run 'ip link' to find your interface name (e.g. eth0, enp3s0)
+LAN_IFACE="eth0"
+FRIENDLY_NAME="smart-chime-receiver"
+PORT=4713

@@ -8,7 +8,9 @@ set -euo pipefail
 export XDG_RUNTIME_DIR="/run/user/$(id -u)"
 export PULSE_SERVER="unix:${XDG_RUNTIME_DIR}/pulse/native"
 
-SOUNDS_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../sounds" && pwd)"
+# --- Setup & Configuration ---
+CONF="$(cd "$(dirname "${BASH_SOURCE[0]}")/../config" && pwd)/soundctl.conf"
+if [[ -f "$CONF" ]]; then source "$CONF"; else echo "Error: Config not found" >&2; exit 1; fi
 SOUND_FILE="${1:-}"
 VOLUME="${2:-1.0}" # 1.0 is 100%
 
@@ -28,6 +30,6 @@ if [[ ! -f "$FILE_PATH" ]]; then
     fi
 fi
 
-# Use pw-play (PipeWire native) with event role.
+# Use pw-play (PipeWire native) with music role.
 # --volume=FLOAT (1.0 is original)
-pw-play --media-role=event --volume="$VOLUME" "$FILE_PATH"
+pw-play --media-role=music --volume="$VOLUME" "$FILE_PATH"
