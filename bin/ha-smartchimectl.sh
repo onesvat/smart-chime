@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-CONF="/home/onur/Projects/smart-chime/config/soundctl.conf"
+BASE_DIR="$(cd "$(dirname "$(readlink -f "${BASH_SOURCE[0]}")")/.." && pwd)"
+CONF="${BASE_DIR}/config/soundctl.conf"
 
 err(){ echo "ERR: $*" >&2; exit 2; }
 
@@ -43,7 +44,7 @@ case "$cmd" in
   "")
     # Backward compatible: play cat-call at current DEFAULT_VOLUME
     vol="$(read_var DEFAULT_VOLUME)"
-    exec /home/onur/Projects/smart-chime/bin/smart-chime.sh /home/onur/Projects/smart-chime/sounds/cat-call.mp3 "$vol"
+    exec "${BASE_DIR}/bin/smart-chime.sh" "${BASE_DIR}/sounds/cat-call.mp3" "$vol"
     ;;
   get_volume)
     read_var DEFAULT_VOLUME
@@ -68,10 +69,10 @@ PY
     case "$arg" in
       /*|*..* ) err "invalid path" ;;
     esac
-    full="/home/onur/Projects/smart-chime/sounds/$arg"
+    full="${BASE_DIR}/sounds/$arg"
     [ -f "$full" ] || err "file not found"
     vol="$(read_var DEFAULT_VOLUME)"
-    exec /home/onur/Projects/smart-chime/bin/smart-chime.sh "$arg" "$vol"
+    exec "${BASE_DIR}/bin/smart-chime.sh" "$arg" "$vol"
     ;;
   set_bells)
     [ "$arg" = "on" ] || [ "$arg" = "off" ] || err "bells must be on/off"
