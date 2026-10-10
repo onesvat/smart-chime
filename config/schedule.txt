@@ -35,3 +35,22 @@
 20:00 roman/hour_11.wav
 21:00 roman/hour_12.wav
 22:00 roman/hour_13.wav
+
+# 19:04 cannon-shoot.final.mp3
+
+# Ramadan 2026 - Aksam Ezani (date-specific)
+2026-03-05 19:07 cannon-shoot.final.mp3 0.9
+2026-03-06 19:08 cannon-shoot.final.mp3 0.9
+2026-03-07 19:09 cannon-shoot.final.mp3 0.9
+2026-03-08 19:11 cannon-shoot.final.mp3 0.9
+2026-03-09 19:12 cannon-shoot.final.mp3 0.9
+2026-03-10 19:13 cannon-shoot.final.mp3 0.9
+2026-03-11 19:14 cannon-shoot.final.mp3 0.9
+2026-03-12 19:15 cannon-shoot.final.mp3 0.9
+2026-03-13 19:16 cannon-shoot.final.mp3 0.9
+2026-03-14 19:17 cannon-shoot.final.mp3 0.9
+2026-03-15 19:18 cannon-shoot.final.mp3 0.9
+2026-03-16 19:19 cannon-shoot.final.mp3 0.9
+2026-03-17 19:20 cannon-shoot.final.mp3 0.9
+2026-03-18 19:21 cannon-shoot.final.mp3 0.9
+2026-03-19 19:23 cannon-shoot.final.mp3 0.9

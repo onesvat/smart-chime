@@ -21,6 +21,11 @@ Add this line to your crontab (`crontab -e`) to check the schedule every minute:
 * * * * * /path/to/smart-chime/bin/tick.sh
 ```
 
+Schedule file format (`config/schedule.txt`):
+- Daily entry: `HH:MM file.wav`
+- Date-specific entry: `YYYY-MM-DD HH:MM file.wav`
+- Optional per-line volume override: add float at end, e.g. `19:06 cannon-shoot.mp3 0.7`
+
 ### 3. Enable Audio Casting
 Run this script to make your machine visible on the network for AirPlay and other Linux machines:
 ```bash
